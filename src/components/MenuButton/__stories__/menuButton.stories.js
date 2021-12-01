@@ -196,6 +196,16 @@ export const WithText = () => (
   </div>
 );
 
+export const NoChildren = () => (
+  <div style={{ width: "100px" }}>
+    <MenuButton
+      component={Favorite}
+      text="Favorite"
+      onClick={() => alert('Now I\'m like a regular button')}
+    />
+  </div>
+);
+
 export default {
   title: "Components|MenuButton",
   component: MenuButton,
